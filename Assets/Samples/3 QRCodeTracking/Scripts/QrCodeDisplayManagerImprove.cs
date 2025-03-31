@@ -14,10 +14,11 @@ public class QrCodeDisplayManagerImprove : MonoBehaviour
     private readonly Dictionary<string, MarkerController> _activeMarkers = new();
     private PassthroughCameraEye _passthroughCameraEye;
     private GameObject spawnObj;
-
+    private MatchQcodeText matchQcodeText;
     private void Awake()
     {
         _passthroughCameraEye = passthroughCameraManager.eye;
+        matchQcodeText = GetComponent<MatchQcodeText>();
     }
 
     private void Update()
@@ -186,6 +187,10 @@ public class QrCodeDisplayManagerImprove : MonoBehaviour
 
                 // 将新创建的标记添加到活动标记字典中
                 _activeMarkers[qrResult.text] = marker;
+                
+                //初始化锚点
+                matchQcodeText.InitSpcatialAnchor(marker.transform, qrResult.text);
+                Debug.Log("调用方法initspatialAnchor");
             }
             
         }

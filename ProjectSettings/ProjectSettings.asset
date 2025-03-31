@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: QuestCameraAPI2022
+  productName: CameraQcodeAnchorTest
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -140,7 +140,7 @@ PlayerSettings:
   loadStoreDebugModeEnabled: 0
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
-  bundleVersion: 0.1.0
+  bundleVersion: 0.0.1
   preloadedAssets:
   - {fileID: 11400000, guid: 980dfc5e244bf92439d918fc0436ab1d, type: 2}
   - {fileID: 11400000, guid: 9fcafaf5b5b1a1743a9c183ceefad6c3, type: 2}
@@ -164,7 +164,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.DefaultCompany.QuestCameraAPI2022
+    Android: com.DefaultCompany.CameraQcodeAnchorTest
     Standalone: com.DefaultCompany.QuestCameraAPI2022
     iPhone: com.Unity-Technologies.com.unity.template.urp-blank
   buildNumber:
