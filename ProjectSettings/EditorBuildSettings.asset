@@ -5,21 +5,14 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
+  - enabled: 1
+    path: Assets/Colocation/Scenes/Colocation.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 0
-    path: Assets/Samples/3 QRCodeTracking/ImageTrackingByQRCode.unity
-    guid: 5139963fb7da6724da1c37dd78192890
-  - enabled: 1
-    path: Assets/Scenes/MultiplayerMRAnchor.unity
-    guid: 6f86f8aa811dff24089918f7bdb394bf
+    path: Assets/Colocation/Scenes/ColocationTest.unity
+    guid: b10abb41513b629418cd5cd13f5b78b1
   m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 3f117a8452da69a45beeb27e46e41544,
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 2a92d7d1b9e254b2398812013a455fac,
       type: 2}
-    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 5451f7fddd009084599f4fd928cedb58,
-      type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 29f034d3937da8d4ab26042353ab2fdd,
-      type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 23ea143dfb1ff714aa7990bebfaa38e3,
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: aca1217e517be4a5ea3d3c6762d1e4e3,
       type: 2}
