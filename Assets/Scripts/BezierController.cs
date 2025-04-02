@@ -44,7 +44,6 @@ public class BezierController : MonoBehaviour
         if (timer < changeBeizierTime) return;
         timer = 0f;
         ChanegBerzierPoints();
-        Debug.Log(_path.bezierCurve.points.Count);
     }
 
     void ChanegBerzierPoints()

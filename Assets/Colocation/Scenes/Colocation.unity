@@ -2962,7 +2962,7 @@ GameObject:
   - component: {fileID: 119203098}
   - component: {fileID: 119203101}
   - component: {fileID: 119203100}
-  - component: {fileID: 119203099}
+  - component: {fileID: 119203102}
   m_Layer: 0
   m_Name: '[BuildingBlock] TouchHandGrab'
   m_TagString: Untagged
@@ -2985,26 +2985,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 70321120}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &119203099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 119203097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cb4a09355f9dc244bfbcd2ac9208ef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 119203100}
-  _boundsCollider: {fileID: 70321122}
-  _colliders:
-  - {fileID: 70321121}
 --- !u!114 &119203100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3047,6 +3027,29 @@ MonoBehaviour:
     _installationVariants:
     - _memberName: mode
       _value: '{"value__":0}'
+--- !u!114 &119203102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119203097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 119203100}
+  _rigidbody: {fileID: 70321123}
+  _grabSource: {fileID: 0}
+  _useClosestPointAsGrabSource: 0
+  _releaseDistance: 0
+  _resetGrabOnGrabsUpdated: 1
+  _physicsGrabbable: {fileID: 0}
 --- !u!1 &120101669
 GameObject:
   m_ObjectHideFlags: 0
@@ -4588,7 +4591,7 @@ GameObject:
   - component: {fileID: 181025682}
   - component: {fileID: 181025685}
   - component: {fileID: 181025684}
-  - component: {fileID: 181025683}
+  - component: {fileID: 181025686}
   m_Layer: 0
   m_Name: '[BuildingBlock] TouchHandGrab'
   m_TagString: Untagged
@@ -4611,26 +4614,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1630635164}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &181025683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181025681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cb4a09355f9dc244bfbcd2ac9208ef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 181025684}
-  _boundsCollider: {fileID: 1630635166}
-  _colliders:
-  - {fileID: 1630635165}
 --- !u!114 &181025684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4673,6 +4656,29 @@ MonoBehaviour:
     _installationVariants:
     - _memberName: mode
       _value: '{"value__":0}'
+--- !u!114 &181025686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181025681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 181025684}
+  _rigidbody: {fileID: 1630635167}
+  _grabSource: {fileID: 0}
+  _useClosestPointAsGrabSource: 0
+  _releaseDistance: 0
+  _resetGrabOnGrabsUpdated: 1
+  _physicsGrabbable: {fileID: 0}
 --- !u!1 &185135894
 GameObject:
   m_ObjectHideFlags: 0
@@ -5370,7 +5376,7 @@ GameObject:
   - component: {fileID: 218609872}
   - component: {fileID: 218609875}
   - component: {fileID: 218609874}
-  - component: {fileID: 218609873}
+  - component: {fileID: 218609876}
   m_Layer: 0
   m_Name: '[BuildingBlock] TouchHandGrab'
   m_TagString: Untagged
@@ -5393,26 +5399,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 14431900}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &218609873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218609871}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cb4a09355f9dc244bfbcd2ac9208ef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 218609874}
-  _boundsCollider: {fileID: 14431896}
-  _colliders:
-  - {fileID: 14431894}
 --- !u!114 &218609874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5455,6 +5441,29 @@ MonoBehaviour:
     _installationVariants:
     - _memberName: mode
       _value: '{"value__":0}'
+--- !u!114 &218609876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218609871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 218609874}
+  _rigidbody: {fileID: 14431895}
+  _grabSource: {fileID: 0}
+  _useClosestPointAsGrabSource: 0
+  _releaseDistance: 0
+  _resetGrabOnGrabsUpdated: 1
+  _physicsGrabbable: {fileID: 0}
 --- !u!1 &223060083
 GameObject:
   m_ObjectHideFlags: 0
@@ -5745,6 +5754,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1004843278}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &226762112 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2721185647472841409, guid: 8c58a848a26e90f4b9ce1d306e072f2e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1143719809}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &226794111
 GameObject:
   m_ObjectHideFlags: 0
@@ -9902,7 +9923,7 @@ GameObject:
   - component: {fileID: 365717230}
   - component: {fileID: 365717233}
   - component: {fileID: 365717232}
-  - component: {fileID: 365717231}
+  - component: {fileID: 365717234}
   m_Layer: 0
   m_Name: '[BuildingBlock] TouchHandGrab'
   m_TagString: Untagged
@@ -9925,26 +9946,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 817639318}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &365717231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 365717229}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cb4a09355f9dc244bfbcd2ac9208ef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 365717232}
-  _boundsCollider: {fileID: 817639314}
-  _colliders:
-  - {fileID: 817639312}
 --- !u!114 &365717232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9987,6 +9988,29 @@ MonoBehaviour:
     _installationVariants:
     - _memberName: mode
       _value: '{"value__":0}'
+--- !u!114 &365717234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365717229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 365717232}
+  _rigidbody: {fileID: 817639313}
+  _grabSource: {fileID: 0}
+  _useClosestPointAsGrabSource: 0
+  _releaseDistance: 0
+  _resetGrabOnGrabsUpdated: 1
+  _physicsGrabbable: {fileID: 0}
 --- !u!1 &368277103
 GameObject:
   m_ObjectHideFlags: 0
@@ -13870,7 +13894,7 @@ GameObject:
   - component: {fileID: 538995773}
   - component: {fileID: 538995776}
   - component: {fileID: 538995775}
-  - component: {fileID: 538995774}
+  - component: {fileID: 538995777}
   m_Layer: 0
   m_Name: '[BuildingBlock] TouchHandGrab'
   m_TagString: Untagged
@@ -13893,26 +13917,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1146995655}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &538995774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538995772}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cb4a09355f9dc244bfbcd2ac9208ef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 538995775}
-  _boundsCollider: {fileID: 1146995651}
-  _colliders:
-  - {fileID: 1146995649}
 --- !u!114 &538995775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13955,6 +13959,29 @@ MonoBehaviour:
     _installationVariants:
     - _memberName: mode
       _value: '{"value__":0}'
+--- !u!114 &538995777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538995772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 538995775}
+  _rigidbody: {fileID: 1146995650}
+  _grabSource: {fileID: 0}
+  _useClosestPointAsGrabSource: 0
+  _releaseDistance: 0
+  _resetGrabOnGrabsUpdated: 1
+  _physicsGrabbable: {fileID: 0}
 --- !u!1 &539992956
 GameObject:
   m_ObjectHideFlags: 0
@@ -27811,7 +27838,7 @@ MonoBehaviour:
   continueTime: 10
   afterSpeed: 0.3
   changeAfterTime: 0.5
-  unityEventWrapper: {fileID: 0}
+  unityEventWrapper: {fileID: 226762112}
 --- !u!1 &1148509466
 GameObject:
   m_ObjectHideFlags: 0
@@ -34836,7 +34863,7 @@ GameObject:
   - component: {fileID: 1436913083}
   - component: {fileID: 1436913086}
   - component: {fileID: 1436913085}
-  - component: {fileID: 1436913084}
+  - component: {fileID: 1436913087}
   m_Layer: 0
   m_Name: '[BuildingBlock] TouchHandGrab'
   m_TagString: Untagged
@@ -34859,26 +34886,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 865783008}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1436913084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1436913082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cb4a09355f9dc244bfbcd2ac9208ef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 1436913085}
-  _boundsCollider: {fileID: 865783004}
-  _colliders:
-  - {fileID: 865783002}
 --- !u!114 &1436913085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34921,6 +34928,29 @@ MonoBehaviour:
     _installationVariants:
     - _memberName: mode
       _value: '{"value__":0}'
+--- !u!114 &1436913087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436913082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 1436913085}
+  _rigidbody: {fileID: 865783003}
+  _grabSource: {fileID: 0}
+  _useClosestPointAsGrabSource: 0
+  _releaseDistance: 0
+  _resetGrabOnGrabsUpdated: 1
+  _physicsGrabbable: {fileID: 0}
 --- !u!1 &1437062893
 GameObject:
   m_ObjectHideFlags: 0
@@ -34932,7 +34962,7 @@ GameObject:
   - component: {fileID: 1437062894}
   - component: {fileID: 1437062897}
   - component: {fileID: 1437062896}
-  - component: {fileID: 1437062895}
+  - component: {fileID: 1437062898}
   m_Layer: 0
   m_Name: '[BuildingBlock] TouchHandGrab'
   m_TagString: Untagged
@@ -34955,26 +34985,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1454215947}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1437062895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1437062893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cb4a09355f9dc244bfbcd2ac9208ef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 1437062896}
-  _boundsCollider: {fileID: 1454215949}
-  _colliders:
-  - {fileID: 1454215948}
 --- !u!114 &1437062896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35017,6 +35027,29 @@ MonoBehaviour:
     _installationVariants:
     - _memberName: mode
       _value: '{"value__":0}'
+--- !u!114 &1437062898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437062893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 1437062896}
+  _rigidbody: {fileID: 1454215950}
+  _grabSource: {fileID: 0}
+  _useClosestPointAsGrabSource: 0
+  _releaseDistance: 0
+  _resetGrabOnGrabsUpdated: 1
+  _physicsGrabbable: {fileID: 0}
 --- !u!1 &1444013979
 GameObject:
   m_ObjectHideFlags: 0
@@ -38636,7 +38669,7 @@ GameObject:
   - component: {fileID: 1616783019}
   - component: {fileID: 1616783022}
   - component: {fileID: 1616783021}
-  - component: {fileID: 1616783020}
+  - component: {fileID: 1616783023}
   m_Layer: 0
   m_Name: '[BuildingBlock] TouchHandGrab'
   m_TagString: Untagged
@@ -38659,26 +38692,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1820196486}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1616783020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1616783018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cb4a09355f9dc244bfbcd2ac9208ef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 1616783021}
-  _boundsCollider: {fileID: 1820196488}
-  _colliders:
-  - {fileID: 1820196487}
 --- !u!114 &1616783021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38721,6 +38734,29 @@ MonoBehaviour:
     _installationVariants:
     - _memberName: mode
       _value: '{"value__":0}'
+--- !u!114 &1616783023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616783018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 1616783021}
+  _rigidbody: {fileID: 1820196489}
+  _grabSource: {fileID: 0}
+  _useClosestPointAsGrabSource: 0
+  _releaseDistance: 0
+  _resetGrabOnGrabsUpdated: 1
+  _physicsGrabbable: {fileID: 0}
 --- !u!1 &1617288052
 GameObject:
   m_ObjectHideFlags: 0
@@ -39888,7 +39924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 413bd4e9cbbc96b46ac5a1d62a4105d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseGravity: 1
+  UseGravity: 0
 --- !u!64 &1658717711
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -39933,7 +39969,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -40111,7 +40147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handInTheTree: 0
   leaf: {fileID: 3522670560215594990, guid: b2de601699239294ca3fbbed3885771c, type: 3}
-  fingerPos: {fileID: 120101670}
+  fingerPos: {fileID: 1402438281}
   righthand: {fileID: 1402438287}
 --- !u!4 &1666791679
 Transform:

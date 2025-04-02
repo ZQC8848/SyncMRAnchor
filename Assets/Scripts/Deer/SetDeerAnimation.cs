@@ -15,13 +15,14 @@ public class SetDeerAnimation : MonoBehaviour
         // 缓存组件提升性能
         bezier = GetComponent<SimpleBezierAlonger>();
     }
-
+    
     void Update()
     {
         // 实时同步速度到动画器
         animator.SetFloat("Speed", bezier.speed);
         speed = bezier.speed; // 仅用于Inspector显示
     }
+    
     public void ResetTouchTime()
     {
         lastTouchTime = 2;

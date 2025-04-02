@@ -42,13 +42,15 @@ public class InitLeaf : MonoBehaviour
             return;
         }
         leafInFinger =  Instantiate(leaf,fingerPos.position,fingerPos.rotation,fingerPos);
+        Debug.Log("Éú³ÉÊ÷Ò¶");
     }
     public void OnPinchReleased()
     {
         if (leafInFinger == null)
             return;
 
-        Debug.Log("Leaf is released");
+        Debug.Log("ÊÍ·ÅÊ÷Ò¶");
+        leafInFinger.GetComponent<LeafFollowFinger>().enabled = false;
         leafInFinger.GetComponent<Rigidbody>().useGravity = true;
         leafInFinger.transform.SetParent(null);
     }

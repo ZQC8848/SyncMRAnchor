@@ -31,6 +31,7 @@ public class ControlDeerSpeedBox : MonoBehaviour
             deerAnimationController.SetSpeed(touchSpeed, changeTouchTime);
             
             StartCoroutine(ContinueMove(deerAnimationController));
+            StartCoroutine(DisableTouch());
             unityEventWrapper.enabled = true;
             Debug.Log("开始鹿交互");
         }
@@ -41,6 +42,11 @@ public class ControlDeerSpeedBox : MonoBehaviour
         yield return new WaitForSeconds(continueTime);
 
         setDeerAnimation.SetSpeed(afterSpeed, changeAfterTime);
+    }
+
+    IEnumerator DisableTouch()
+    {
+        yield return new WaitForSeconds(continueTime/2);
         unityEventWrapper.enabled = false;
         Debug.Log("禁止鹿交互");
     }

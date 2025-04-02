@@ -7,10 +7,11 @@
     <list default="true" id="279a3ff2-5d00-47b8-8903-996778a2189d" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SyncAnchorMR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SyncAnchorMR/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Colocation/Scenes/Colocation.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Colocation/Scenes/Colocation.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LeafNetwork.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LeafNetwork.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BezierController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BezierController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Deer/ControlDeerSpeedBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Deer/ControlDeerSpeedBox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Deer/SetDeerAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Deer/SetDeerAnimation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InitLeaf.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InitLeaf.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
