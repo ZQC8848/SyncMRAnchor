@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Oculus.Interaction;
 using UnityEngine;
 
 public class ControlDeerSpeedBox : MonoBehaviour
@@ -17,6 +18,8 @@ public class ControlDeerSpeedBox : MonoBehaviour
     public float changeAfterTime;
 
     private SetDeerAnimation deerAnimationController;
+    
+    public InteractableUnityEventWrapper unityEventWrapper;
     private void Start()
     {
         deerAnimationController = GameObject.FindObjectOfType<SetDeerAnimation>();
@@ -26,8 +29,10 @@ public class ControlDeerSpeedBox : MonoBehaviour
         if (other.CompareTag("Deer"))
         {
             deerAnimationController.SetSpeed(touchSpeed, changeTouchTime);
-
+            
             StartCoroutine(ContinueMove(deerAnimationController));
+            unityEventWrapper.enabled = true;
+            Debug.Log("开始鹿交互");
         }
     }
 
@@ -36,6 +41,8 @@ public class ControlDeerSpeedBox : MonoBehaviour
         yield return new WaitForSeconds(continueTime);
 
         setDeerAnimation.SetSpeed(afterSpeed, changeAfterTime);
+        unityEventWrapper.enabled = false;
+        Debug.Log("禁止鹿交互");
     }
 
 }

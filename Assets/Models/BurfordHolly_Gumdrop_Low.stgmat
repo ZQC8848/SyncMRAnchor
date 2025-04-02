@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated using SpeedTree tools -->
+<Materials Count="2" Packer="_Unity">
+	<Material ID="1" Name="BurfordHollyWrap_Mat" TwoSided="0" UserData="" VertexOpacity="1" FlipNormalsOnBackside="1">
+		<Map Index="0" File="BurfordHollyWrap_Color.png" />
+		<Map Index="1" File="BurfordHollyWrap_Normal.png" />
+		<Map Index="2" File="BurfordHollyWrap_Extra.png" />
+		<Map Index="3" File="BurfordHollyWrap_Subsurface.png" />
+	</Material>
+	<Material ID="23456" Name="BurfordHolly_Gumdrop_Low_Mat" TwoSided="1" UserData="" VertexOpacity="1" FlipNormalsOnBackside="1">
+		<Map Index="0" File="BurfordHolly_Gumdrop_Low_Color.png" />
+		<Map Index="1" File="BurfordHolly_Gumdrop_Low_Normal.png" />
+		<Map Index="2" File="BurfordHolly_Gumdrop_Low_Extra.png" />
+		<Map Index="3" File="BurfordHolly_Gumdrop_Low_Subsurface.png" />
+	</Material>
+</Materials>
