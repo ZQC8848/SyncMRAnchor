@@ -7,7 +7,71 @@
     <list default="true" id="279a3ff2-5d00-47b8-8903-996778a2189d" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SyncAnchorMR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SyncAnchorMR/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Colocation/Scenes/Colocation.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Colocation/Scenes/Colocation.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Calf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Calf/scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Calf/scripts/Demo_Animator_DeerCalf.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Calf/scripts/Demo_Animator_DeerCalf.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Doe.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Doe/scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Doe/scripts/Demo_Animator_DeerDoe.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Doe/scripts/Demo_Animator_DeerDoe.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/Materials/Deer_stag_Color.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/Materials/Deer_stag_Color.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/fbx/Deer_Stag_DemoAnimator_IP.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/fbx/Deer_Stag_DemoAnimator_IP.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/fbx/Deer_stag_HighPoly.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/fbx/Deer_stag_HighPoly.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/fbx/RM_animations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/fbx/RM_animations/Arm_Deer_Eat.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/fbx/RM_animations/Arm_Deer_Eat.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/fbx/RM_animations/Arm_Deer_Idle_1.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/fbx/RM_animations/Arm_Deer_Idle_1.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/fbx/RM_animations/Arm_Deer_Idle_3.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/fbx/RM_animations/Arm_Deer_Idle_3.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/fbx/RM_animations/Arm_Deer_Run_forward_RM.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/fbx/RM_animations/Arm_Deer_Run_forward_RM.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/fbx/RM_animations/Arm_Deer_Walk_forward_RM.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/fbx/RM_animations/Arm_Deer_Walk_forward_RM.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/scripts/Demo_Animator_DeerStag.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/scripts/Demo_Animator_DeerStag.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/textures/Deer_stag_Color.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/textures/Deer_stag_Color.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/textures/Deer_stag_Metall.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/textures/Deer_stag_Metall.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/textures/Deer_stag_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/textures/Deer_stag_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/textures/New Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/textures/New Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer_Red.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer_Red/scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer_Red/scripts/Demo_Animator_DeerRed.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Realistic/Forest Animals/Deers/Deer_Red/scripts/Demo_Animator_DeerRed.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Tree.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Tree/Generic Trees 02_FBX.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Tree/Generic Trees 02_FBX.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Tree/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Tree/Materials/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Tree/Materials/Materials/leaf.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Tree/Materials/Materials/leaf.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Tree/Materials/bark03.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Tree/Materials/bark03.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Tree/Materials/leaf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Tree/Materials/leaf.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Tree/bark03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Moddle/Tree/bark03.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BezierController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BezierController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BezierPathEditor_v1.0.0/Runtime/BezierCurve.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BezierPathEditor_v1.0.0/Runtime/BezierCurve.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BezierPathEditor_v1.0.0/Runtime/SimpleBezierCurvePath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BezierPathEditor_v1.0.0/Runtime/SimpleBezierCurvePath.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +84,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BezierController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.meta.xr.sdk.core@74.0.0/Scripts/BuildingBlocks/MultiplayerBlocks/PhotonFusion/NetworkedGrabbableObject/Scripts/TransferOwnershipFusion.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.12/Shaders/Lit.shader" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/Deer/ControlDeerSpeedBox.cs" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/Deer/SetDeerAnimation.cs" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/InitLeaf.cs" charset="GBK" />
+  </component>
+</project>

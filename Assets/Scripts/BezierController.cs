@@ -9,6 +9,7 @@ public class BezierController : MonoBehaviour
     SimpleBezierCurvePath _path;
     private float timer = 0f;
     private float changeBeizierTime = 1f;
+
     
     [System.Serializable]
     public class BezierPoint
@@ -28,6 +29,13 @@ public class BezierController : MonoBehaviour
         {
             point.controllerPoint = point.originalPoint.GetChild(1);
         }
+        
+        _path.bezierCurve.points.Clear();
+        for (int i = 0; i < newBezierPoints.Count; i++)
+        {
+            _path.bezierCurve.AddPoint(newBezierPoints[i].originalPoint.position, newBezierPoints[i].controllerPoint.position);
+            //_path.bezierCurve.AddPoint(newBezierPoints[i].originalPoint.position);
+        }
     }
 
     private void Update()
@@ -36,15 +44,14 @@ public class BezierController : MonoBehaviour
         if (timer < changeBeizierTime) return;
         timer = 0f;
         ChanegBerzierPoints();
+        Debug.Log(_path.bezierCurve.points.Count);
     }
 
     void ChanegBerzierPoints()
     {
-        _path.bezierCurve.points.Clear();
         for (int i = 0; i < newBezierPoints.Count; i++)
         {
-            _path.bezierCurve.points[i].position = newBezierPoints[i].originalPoint.position;
-            _path.bezierCurve.points[i].tangent = newBezierPoints[i].controllerPoint.position;
+            _path.bezierCurve.ChangePoint(i, newBezierPoints[i].originalPoint.position, newBezierPoints[i].controllerPoint.position);
         }
     }
 }

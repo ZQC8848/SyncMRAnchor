@@ -8,11 +8,11 @@ namespace BezierCurvePath
     public class BezierCurve
     {
         [Serializable]
-        internal struct BezierPoint : IComparable<BezierPoint>
+        public class BezierPoint : IComparable<BezierPoint>
         {
-            [SerializeField] internal Vector3 position;
-            [SerializeField] internal Vector3 tangent;
-            [SerializeField] internal int index;
+            [SerializeField] public Vector3 position;
+            [SerializeField] public Vector3 tangent;
+            [SerializeField] public int index;
 
             public int CompareTo(BezierPoint other)
             {
@@ -21,7 +21,7 @@ namespace BezierCurvePath
                     return -1;
             }
         }
-        [SerializeField] internal List<BezierPoint> points = new List<BezierPoint>();
+        [SerializeField] public List<BezierPoint> points = new List<BezierPoint>();
         [SerializeField] internal bool loop;
         internal void AddPoint(Vector3 pointPos)
         {
@@ -30,7 +30,33 @@ namespace BezierCurvePath
             var point = new BezierPoint() { position = pointPos, tangent = Vector3.right * 2f, index = points.Count };
             points.Add(point);
         }
+        internal void AddPoint(Vector3 pointPos,Vector3 tangentPos)
+        {
+            if (points == null)
+                points = new List<BezierPoint>();
+            var point = new BezierPoint() { position = pointPos, tangent = (tangentPos-pointPos)*3f, index = points.Count };
+            points.Add(point);
+        }
 
+        internal void ChangePoint(int index, Vector3 pointPos, Vector3 tangentPos)
+        {
+            if (points == null)
+            {
+                Debug.LogWarning("Cannot change point because points list is null");
+                return;
+            }
+            points[index].position = pointPos;
+            points[index].tangent = (tangentPos-pointPos)*3f;
+        }
+        internal void ChangePoint(int index, Vector3 pointPos)
+        {
+            if (points == null)
+            {
+                Debug.LogWarning("Cannot change point because points list is null");
+                return;
+            }
+            points[index].position = pointPos;
+        }
         internal void RemovePoint(int orderIndex)
         {
             if (points != null && orderIndex < points.Count && points.Count > 0)

@@ -10,8 +10,8 @@ namespace BezierCurvePath
     [AddComponentMenu("Bezier/SimpleBezierCurvePath", 0), DisallowMultipleComponent]
     public class SimpleBezierCurvePath : MonoBehaviour
     {
-        [SerializeField] internal BezierCurve bezierCurve = new BezierCurve();
-
+        [SerializeField] public BezierCurve bezierCurve = new BezierCurve();
+        
 #if UNITY_EDITOR
         internal Color pathColor = Color.green;
         internal bool loop;
@@ -57,7 +57,7 @@ namespace BezierCurvePath
         private Color pointColor = Color.red;
         private Color controlColor = Color.blue;
         private Color tangentColor = Color.yellow;
-
+        
         private int selectIndex = 0;
         private bool select;
 

@@ -8,7 +8,7 @@ public class DeerEat : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //Debug.LogWarning(other.name);
-        if (other.CompareTag("leaf"))
+        if (other.CompareTag("Leaf"))
         {
             Destroy(other.gameObject);
             deerAnimationController.SetDeerAnimTrigger("Eat");
