@@ -13,7 +13,8 @@ public class ControlDeerSpeedBox : MonoBehaviour
     public float continueTime;
 
     [Header("持续时间过后移动速度")]
-    public float afterSpeed;
+    public float afterSpeed_1=0.1f;
+    public float afterSpeed_2=0.3f;
     [Header("过渡时间")]
     public float changeAfterTime;
     [Header("交互提示")]
@@ -38,7 +39,14 @@ public class ControlDeerSpeedBox : MonoBehaviour
     {
         yield return new WaitForSeconds(continueTime);
         setDeerAnimation.SetDeerAnimBool("IsMoving", true);
-        setDeerAnimation.SetSpeed(afterSpeed, changeAfterTime);
+        if (Random.Range(-1.0f, 1.0f) < 0f)
+        {
+            setDeerAnimation.SetSpeed(afterSpeed_1, changeAfterTime);
+        }
+        else
+        {
+            setDeerAnimation.SetSpeed(afterSpeed_2, changeAfterTime);
+        }
         infoUI.SetActive(false);
     }
 

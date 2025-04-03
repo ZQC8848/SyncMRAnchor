@@ -6,21 +6,21 @@ using Meta.XR.MultiplayerBlocks.Shared;
 using UnityEngine;
 using Meta.XR.MultiplayerBlocks.Fusion;
 
-namespace Meta.XR.MultiplayerBlocks.Fusion
-{
-    public interface ITransferOwnership
-    {
-        /// <summary>
-        /// Transfers the ownership of the networked game object to the local player.
-        /// </summary>
-        public void TransferOwnershipToLocalPlayer();
-
-        /// <summary>
-        /// Indicates whether the local player has ownership of the networked game object.
-        /// </summary>
-        /// <returns>'true' if the local player has ownership of the networked game object</returns>
-        public bool HasOwnership();
-    }
+//namespace Meta.XR.MultiplayerBlocks.Fusion
+//{
+    // public interface ITransferOwnership
+    // {
+    //     /// <summary>
+    //     /// Transfers the ownership of the networked game object to the local player.
+    //     /// </summary>
+    //     public void TransferOwnershipToLocalPlayer();
+    //
+    //     /// <summary>
+    //     /// Indicates whether the local player has ownership of the networked game object.
+    //     /// </summary>
+    //     /// <returns>'true' if the local player has ownership of the networked game object</returns>
+    //     public bool HasOwnership();
+    // }
 
     public class SetDeerAnimation : MonoBehaviour
     {
@@ -29,13 +29,14 @@ namespace Meta.XR.MultiplayerBlocks.Fusion
         private Coroutine speedTransitionCoroutine; // 速度过渡协程引用
         private SimpleBezierAlonger bezier; // 缓存的路径跟随组件
         public NetworkMecanimAnimator networkAnimator;
-        public ITransferOwnership transferOwnership;
+        public TransferOwnershipFusion transferOwnership;
 
         void Start()
         {
             // 缓存组件提升性能
             bezier = GetComponent<SimpleBezierAlonger>();
-            transferOwnership = this.GetInterfaceComponent<ITransferOwnership>();
+            //transferOwnership = this.GetInterfaceComponent<ITransferOwnership>();
+            transferOwnership = GetComponent<TransferOwnershipFusion>();
         }
 
         void Update()
@@ -49,6 +50,8 @@ namespace Meta.XR.MultiplayerBlocks.Fusion
         {
             if (!transferOwnership.HasOwnership())
             {
+                Debug.Log("本地强制播放动画");
+                animator.SetTrigger(animName);
                 transferOwnership.TransferOwnershipToLocalPlayer();
             }
 
@@ -139,4 +142,4 @@ namespace Meta.XR.MultiplayerBlocks.Fusion
             }
         }
     }
-}
+//}

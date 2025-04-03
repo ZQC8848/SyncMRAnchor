@@ -9,7 +9,7 @@ public class BezierController : MonoBehaviour
     SimpleBezierCurvePath _path;
     private float timer = 0f;
     private float changeBeizierTime = 1f;
-
+    
     
     [System.Serializable]
     public class BezierPoint
