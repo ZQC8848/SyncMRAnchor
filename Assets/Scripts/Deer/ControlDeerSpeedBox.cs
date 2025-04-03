@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Oculus.Interaction;
 using UnityEngine;
-
+using Meta.XR.MultiplayerBlocks.Fusion;
 public class ControlDeerSpeedBox : MonoBehaviour
 {
     [Header("触碰到方块后切换速度")]

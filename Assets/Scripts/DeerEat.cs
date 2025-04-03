@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Meta.XR.MultiplayerBlocks.Fusion;
 public class DeerEat : MonoBehaviour
 {
     public SetDeerAnimation deerAnimationController;
