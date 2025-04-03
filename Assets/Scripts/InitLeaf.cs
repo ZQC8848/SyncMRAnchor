@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Fusion;
+using Meta.XR.MultiplayerBlocks.Shared;
 using UnityEngine;
 using OVR.Input;
 using Oculus.Interaction;
@@ -12,14 +14,9 @@ public class InitLeaf : MonoBehaviour
     public GameObject leaf;
     public Transform fingerPos;
     GameObject leafInFinger;
-    private ObjectPool leafPool;
-
+    public  NetworkRunner runner;
     public OVRHand righthand;
-
-    private void Start()
-    {
-        leafPool = FindObjectOfType<ObjectPool>();
-    }
+    
 
     public void EnableSpawn()
     {
@@ -48,12 +45,17 @@ public class InitLeaf : MonoBehaviour
         {
             return;
         }
-        //leafInFinger =  Instantiate(leaf,fingerPos.position,fingerPos.rotation,fingerPos);
-        leafInFinger = leafPool.GetObject().gameObject;
-        leafInFinger.transform.position = fingerPos.position;
-        leafInFinger.transform.rotation = fingerPos.rotation;
-        leafInFinger.transform.SetParent(fingerPos);
-        leafInFinger.GetComponent<Rigidbody>().freezeRotation = true;   
+        
+        leafInFinger =  Instantiate(leaf,fingerPos.position,fingerPos.rotation,fingerPos);
+        //leafInFinger = leafPool.GetObject().gameObject;
+        
+        //leafInFinger.transform.position = fingerPos.position;
+        //leafInFinger.transform.rotation = fingerPos.rotation;
+        //Debug.LogWarning("prefab Name:"+leaf.name);
+        //Debug.LogWarning("finger Pos:"+fingerPos.position+" "+ fingerPos.rotation);
+        //Debug.LogWarning("If with NetworkObject:" +leaf.GetComponent<NetworkObject>().enabled);
+        //leafInFinger = runner.Spawn(leaf, fingerPos.position, fingerPos.rotation);
+        SwitchLeafState(true);
         Debug.Log("Éú³ÉÊ÷Ò¶");
     }
     public void OnPinchReleased()
@@ -62,15 +64,33 @@ public class InitLeaf : MonoBehaviour
             return;
 
         Debug.Log("ÊÍ·ÅÊ÷Ò¶");
-        leafInFinger.GetComponent<LeafFollowFinger>().enabled = false;
-        leafInFinger.GetComponent<Rigidbody>().useGravity = true;
-        leafInFinger.GetComponent<Rigidbody>().freezeRotation = false;
-        leafInFinger.transform.SetParent(leafPool.transform);
-        Invoke("ReturnToPool", 3f);
+        SwitchLeafState(false);
+        Invoke("DestroyLeaf", 3f);
     }
 
-    public void ReturnToPool()
+    void SwitchLeafState(bool inFinger)
     {
-        leafInFinger.GetComponent<PooledObject>().ReturnToPool();
+        if (inFinger)
+        {
+            leafInFinger.transform.SetParent(fingerPos);
+            leafInFinger.GetComponent<Rigidbody>().freezeRotation = true;   
+            leafInFinger.GetComponent<Rigidbody>().useGravity = false;
+            //leafInFinger.GetComponent<TransferOwnershipOnSelect>().UseGravity = false;
+            leafInFinger.GetComponent<LeafFollowFinger>().enabled = true;
+        }
+        else
+        {
+            leafInFinger.transform.SetParent(null);
+            leafInFinger.GetComponent<Rigidbody>().freezeRotation = false;
+            leafInFinger.GetComponent<Rigidbody>().useGravity = true;
+            //leafInFinger.GetComponent<TransferOwnershipOnSelect>().UseGravity = true;
+            leafInFinger.GetComponent<LeafFollowFinger>().enabled = false;
+        }
+    }
+
+    void DestroyLeaf()
+    {
+        Destroy(leafInFinger);
+        Debug.Log("Ê÷Ò¶Ïú»Ù");
     }
 }

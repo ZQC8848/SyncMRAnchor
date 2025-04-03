@@ -1,15 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using Fusion;
+using Meta.XR.MultiplayerBlocks.Shared;
 using UnityEngine;
-
+using Meta.XR.MultiplayerBlocks.Fusion;
 public class SetDeerAnimation : MonoBehaviour
 {
     public float speed;          // 当前速度（用于Inspector调试）
     public Animator animator;    // 动画控制器
     private Coroutine speedTransitionCoroutine; // 速度过渡协程引用
     private SimpleBezierAlonger bezier; // 缓存的路径跟随组件
-    public int lastTouchTime =2;
-
+    public NetworkMecanimAnimator networkAnimator;
+    public TransferOwnershipFusion transferOwnership;
     void Start()
     {
         // 缓存组件提升性能
@@ -23,15 +25,17 @@ public class SetDeerAnimation : MonoBehaviour
         speed = bezier.speed; // 仅用于Inspector显示
     }
     
-    public void ResetTouchTime()
-    {
-        lastTouchTime = 2;
-    }
     public void SetDeerAnimTrigger(string animName)
     {
-        if (lastTouchTime <= 0) return;
-        animator.SetTrigger(animName);
-        lastTouchTime--;
+        transferOwnership.TransferOwnershipToLocalPlayer();
+        //if (lastTouchTime <= 0) return;
+        //animator.SetTrigger(animName);
+        networkAnimator.SetTrigger(animName);
+    }
+
+    public void SetDeerAnimBool(string animName, bool value)
+    {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+        networkAnimator.Animator.SetBool(animName, value);
     }
 
     public void RandomSetSpeed()

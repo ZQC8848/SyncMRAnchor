@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class ObjectPool : MonoBehaviour
 {
     // 池中对象prefab
-    private PooledObject prefab;
+    public PooledObject prefab;
 
     // 存储可用对象的缓冲区
     private List<PooledObject> availableObjects = new List<PooledObject>();
@@ -37,10 +37,12 @@ public class ObjectPool : MonoBehaviour
         }
         else // 池中无可用obj
         {
+            Debug.LogError("对象池中无可用对象");
             obj = Instantiate<PooledObject>(prefab);
             obj.transform.SetParent(transform, false);
             obj.Pool = this;
         }
+        Debug.Log("对象池剩余个数："+availableObjects.Count);
         return obj;
     }
 

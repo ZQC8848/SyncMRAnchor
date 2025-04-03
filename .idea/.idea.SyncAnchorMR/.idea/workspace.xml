@@ -7,14 +7,14 @@
     <list default="true" id="279a3ff2-5d00-47b8-8903-996778a2189d" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SyncAnchorMR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SyncAnchorMR/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Colocation/Scenes/Colocation.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Colocation/Scenes/Colocation.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Holotna/Mountain/Materials/Bush01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Holotna/Mountain/Materials/Bush01.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Holotna/Mountain/Textures/Bush01_ALB.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Holotna/Mountain/Textures/Bush01_ALB.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Holotna/Mountain/Textures/Bush01_SPE.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Holotna/Mountain/Textures/Bush01_SPE.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/fbx/Deer_Stag_DemoAnimator_IP.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Moddle/Realistic/Forest Animals/Deers/Deer Family/Deer_Stag/fbx/Deer_Stag_DemoAnimator_IP.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LeafNetwork.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LeafNetwork.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Deer/ControlDeerSpeedBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Deer/ControlDeerSpeedBox.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Deer/SetDeerAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Deer/SetDeerAnimation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/InitLeaf.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InitLeaf.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ObjectPool.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Balanced.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-Balanced.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,10 +25,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d819e76d2dac496782e863b6fab6eea3bcc00/bb/175b1ce7/NetworkMecanimAnimator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Photon/Fusion/Editor/Fusion.Unity.Editor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BezierController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PooledObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StartFusion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.meta.xr.sdk.core@74.0.0/Scripts/BuildingBlocks/MultiplayerBlocks/PhotonFusion/NetworkedGrabbableObject/Scripts/TransferOwnershipFusion.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.meta.xr.sdk.core@74.0.0/Scripts/BuildingBlocks/MultiplayerBlocks/Shared/Colocation/Scripts/ColocationController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.12/Shaders/Lit.shader" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -102,7 +106,7 @@
       <workItem from="1743473539197" duration="13261000" />
       <workItem from="1743515291403" duration="862000" />
       <workItem from="1743562231600" duration="6048000" />
-      <workItem from="1743645924240" duration="3045000" />
+      <workItem from="1743645924240" duration="13650000" />
     </task>
     <servers />
   </component>

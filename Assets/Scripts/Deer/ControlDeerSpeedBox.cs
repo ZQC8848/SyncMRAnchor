@@ -16,14 +16,10 @@ public class ControlDeerSpeedBox : MonoBehaviour
     public float afterSpeed;
     [Header("过渡时间")]
     public float changeAfterTime;
-
-    private SetDeerAnimation deerAnimationController;
-    
-    public InteractableUnityEventWrapper unityEventWrapper;
-    private void Start()
-    {
-        deerAnimationController = GameObject.FindObjectOfType<SetDeerAnimation>();
-    }
+    [Header("交互提示")]
+    public GameObject infoUI;
+    [Header("鹿动画控制器")]
+    public SetDeerAnimation deerAnimationController;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Deer"))
@@ -31,25 +27,21 @@ public class ControlDeerSpeedBox : MonoBehaviour
             deerAnimationController.SetSpeed(touchSpeed, changeTouchTime);
             
             StartCoroutine(ContinueMove(deerAnimationController));
-            StartCoroutine(DisableTouch());
-            unityEventWrapper.enabled = true;
-            deerAnimationController.animator.SetBool("IsMoving", false);
+            //unityEventWrapper.enabled = true;
+            deerAnimationController.SetDeerAnimBool("IsMoving", false);
             Debug.Log("开始鹿交互");
+            infoUI.SetActive(true);
         }
     }
 
     IEnumerator ContinueMove(SetDeerAnimation setDeerAnimation)
     {
         yield return new WaitForSeconds(continueTime);
-        setDeerAnimation.animator.SetBool("IsMoving", true);
+        setDeerAnimation.SetDeerAnimBool("IsMoving", true);
         setDeerAnimation.SetSpeed(afterSpeed, changeAfterTime);
+        infoUI.SetActive(false);
     }
 
-    IEnumerator DisableTouch()
-    {
-        yield return new WaitForSeconds(continueTime/2);
-        unityEventWrapper.enabled = false;
-        Debug.Log("禁止鹿交互");
-    }
+
 
 }

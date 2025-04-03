@@ -4,19 +4,24 @@ using UnityEngine;
 
 public class UpdateLine : MonoBehaviour
 {
-    private LineRenderer lineRenderer;
+    private LineRenderer firstLineRenderer;
+    private LineRenderer secondLineRenderer;
     private Transform controllerPoint;
-    
+    public Transform nextPosition;
     void Start()
     {
-        lineRenderer = GetComponent<LineRenderer>();
+        firstLineRenderer = GetComponent<LineRenderer>();
+        secondLineRenderer = transform.GetChild(1).GetComponent<LineRenderer>();
         controllerPoint = transform.GetChild(1);
     }
 
     // Update is called once per frame
     void Update()
     {
-        lineRenderer.SetPosition(0, controllerPoint.position);
-        lineRenderer.SetPosition(1, transform.position);
+        firstLineRenderer.SetPosition(0, controllerPoint.position);
+        firstLineRenderer.SetPosition(1, transform.position);
+        
+        secondLineRenderer.SetPosition(0, controllerPoint.position);
+        secondLineRenderer.SetPosition(1, nextPosition.position);
     }
 }
