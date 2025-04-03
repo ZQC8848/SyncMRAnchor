@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,8 +12,14 @@ public class InitLeaf : MonoBehaviour
     public GameObject leaf;
     public Transform fingerPos;
     GameObject leafInFinger;
+    private ObjectPool leafPool;
 
     public OVRHand righthand;
+
+    private void Start()
+    {
+        leafPool = FindObjectOfType<ObjectPool>();
+    }
 
     public void EnableSpawn()
     {
@@ -41,7 +48,12 @@ public class InitLeaf : MonoBehaviour
         {
             return;
         }
-        leafInFinger =  Instantiate(leaf,fingerPos.position,fingerPos.rotation,fingerPos);
+        //leafInFinger =  Instantiate(leaf,fingerPos.position,fingerPos.rotation,fingerPos);
+        leafInFinger = leafPool.GetObject().gameObject;
+        leafInFinger.transform.position = fingerPos.position;
+        leafInFinger.transform.rotation = fingerPos.rotation;
+        leafInFinger.transform.SetParent(fingerPos);
+        leafInFinger.GetComponent<Rigidbody>().freezeRotation = true;   
         Debug.Log("Éú³ÉÊ÷Ò¶");
     }
     public void OnPinchReleased()
@@ -52,6 +64,13 @@ public class InitLeaf : MonoBehaviour
         Debug.Log("ÊÍ·ÅÊ÷Ò¶");
         leafInFinger.GetComponent<LeafFollowFinger>().enabled = false;
         leafInFinger.GetComponent<Rigidbody>().useGravity = true;
-        leafInFinger.transform.SetParent(null);
+        leafInFinger.GetComponent<Rigidbody>().freezeRotation = false;
+        leafInFinger.transform.SetParent(leafPool.transform);
+        Invoke("ReturnToPool", 3f);
+    }
+
+    public void ReturnToPool()
+    {
+        leafInFinger.GetComponent<PooledObject>().ReturnToPool();
     }
 }

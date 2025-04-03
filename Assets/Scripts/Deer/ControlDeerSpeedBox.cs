@@ -33,6 +33,7 @@ public class ControlDeerSpeedBox : MonoBehaviour
             StartCoroutine(ContinueMove(deerAnimationController));
             StartCoroutine(DisableTouch());
             unityEventWrapper.enabled = true;
+            deerAnimationController.animator.SetBool("IsMoving", false);
             Debug.Log("¿ªÊ¼Â¹½»»¥");
         }
     }
@@ -40,7 +41,7 @@ public class ControlDeerSpeedBox : MonoBehaviour
     IEnumerator ContinueMove(SetDeerAnimation setDeerAnimation)
     {
         yield return new WaitForSeconds(continueTime);
-
+        setDeerAnimation.animator.SetBool("IsMoving", true);
         setDeerAnimation.SetSpeed(afterSpeed, changeAfterTime);
     }
 
