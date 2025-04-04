@@ -1,8 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Oculus.Interaction;
 using UnityEngine;
 using Meta.XR.MultiplayerBlocks.Fusion;
+using Random = UnityEngine.Random;
+
 public class ControlDeerSpeedBox : MonoBehaviour
 {
     [Header("触碰到方块后切换速度")]
@@ -21,6 +24,14 @@ public class ControlDeerSpeedBox : MonoBehaviour
     public GameObject infoUI;
     [Header("鹿动画控制器")]
     public SetDeerAnimation deerAnimationController;
+    
+    private SwitchTutorialState switchTutorialState;
+
+    private void Start()
+    {
+        switchTutorialState = FindObjectOfType<SwitchTutorialState>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Deer"))
